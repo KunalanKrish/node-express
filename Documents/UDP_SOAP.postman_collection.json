@@ -1,0 +1,634 @@
+{
+	"info": {
+		"_postman_id": "c92259ab-6ea3-4d8e-9cdc-1d07bb6ffe79",
+		"name": "UDP_SOAP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PORTAL_ACCOUNT",
+			"item": [
+				{
+					"name": "GET_Portal_Account_Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/portal_account",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"portal_account"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET_Portal_Account_Details",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/portal_account",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"portal_account"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "142"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8e-U0v8uAikVVja4ixwK0GYfcWXkNM\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Apr 2022 10:03:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"portal_account_guid\": \"a2fb1c09-c33e-40f8-8f02-a713ceb08f91\",\n        \"active\": false,\n        \"created_date\": null,\n        \"updated_date\": null,\n        \"last_uds_update\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GET_Particular_Portal_Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "portal_account_guid",
+									"value": "f601600f-bdd9-4dbe-ae49-243c974c4679",
+									"type": "text"
+								},
+								{
+									"key": "active",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "created_date",
+									"value": "2004-10-19 10:23:54+02",
+									"type": "text"
+								},
+								{
+									"key": "updated_date",
+									"value": "2004-10-19 10:23:54+02",
+									"type": "text"
+								},
+								{
+									"key": "last_uds_update",
+									"value": "2004-10-19 10:23:54+02",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/portal_account/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"portal_account",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET_Particular_Portal_Account",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/portal_account/a2fb1c09-c33e-40f8-8f02-a713ceb08f91",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"portal_account",
+										"a2fb1c09-c33e-40f8-8f02-a713ceb08f91"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "142"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8e-U0v8uAikVVja4ixwK0GYfcWXkNM\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Apr 2022 10:01:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"portal_account_guid\": \"a2fb1c09-c33e-40f8-8f02-a713ceb08f91\",\n        \"active\": false,\n        \"created_date\": null,\n        \"updated_date\": null,\n        \"last_uds_update\": null\n    }\n]"
+						},
+						{
+							"name": "GET_Particular_Portal_Account",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "portal_account_guid",
+											"value": "f601600f-bdd9-4dbe-ae49-243c974c4679",
+											"type": "text"
+										},
+										{
+											"key": "active",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "created_date",
+											"value": "2004-10-19 10:23:54+02",
+											"type": "text"
+										},
+										{
+											"key": "updated_date",
+											"value": "2004-10-19 10:23:54+02",
+											"type": "text"
+										},
+										{
+											"key": "last_uds_update",
+											"value": "2004-10-19 10:23:54+02",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/portal_account/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"portal_account",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "64"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"40-7uWtF0r3CYl4buEb6udP5lozjQ0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Apr 2022 10:24:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"portal_account_guid\": \"f601600f-bdd9-4dbe-ae49-243c974c4679\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GET_PARTICULAR_PORTAL_ACCOUNT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/portal_account/f601600f-bdd9-4dbe-ae49-243c974c4679",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"portal_account",
+								"f601600f-bdd9-4dbe-ae49-243c974c4679"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET_Portal_Account_Details",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/portal_account",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"portal_account"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "142"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8e-U0v8uAikVVja4ixwK0GYfcWXkNM\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Apr 2022 10:03:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"portal_account_guid\": \"a2fb1c09-c33e-40f8-8f02-a713ceb08f91\",\n        \"active\": false,\n        \"created_date\": null,\n        \"updated_date\": null,\n        \"last_uds_update\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Update_Portal_Account",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "active",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "portal_account_guid",
+									"value": "f601600f-bdd9-4dbe-ae49-243c974c4679",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/portal_account/f601600f-bdd9-4dbe-ae49-243c974c4679",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"portal_account",
+								"f601600f-bdd9-4dbe-ae49-243c974c4679"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update_Portal_Account",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "active",
+											"value": "false",
+											"type": "text"
+										},
+										{
+											"key": "portal_account_guid",
+											"value": "f601600f-bdd9-4dbe-ae49-243c974c4679",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/portal_account/f601600f-bdd9-4dbe-ae49-243c974c4679",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"portal_account",
+										"f601600f-bdd9-4dbe-ae49-243c974c4679"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1-NWoZK3kTsExUV00Ywo1G5jlUKKs\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Apr 2022 10:28:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "1"
+						}
+					]
+				},
+				{
+					"name": "DELETE_PORTAL_ACCOUNT",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/portal_account/f601600f-bdd9-4dbe-ae49-243c974c4679",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"portal_account",
+								"f601600f-bdd9-4dbe-ae49-243c974c4679"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "DELETE_PORTAL_ACCOUNT",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/portal_account/f601600f-bdd9-4dbe-ae49-243c974c4679",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"portal_account",
+										"f601600f-bdd9-4dbe-ae49-243c974c4679"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1-tlifxqsNyCzxIJnRwtQKuZToQQw\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Apr 2022 10:30:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Health_Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/health-check",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"health-check"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Health_Check",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/health-check",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"health-check"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "18"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"12-XHQKCjP9vNSGXezq3SvsorY3l0s\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Apr 2022 05:28:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"hello\": \"World!\"\n}"
+				}
+			]
+		}
+	]
+}

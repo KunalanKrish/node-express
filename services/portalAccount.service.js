@@ -1,9 +1,12 @@
 
 const db = require("../config/dbConfig.js");
 const catchAsync = require('../utils/catchAsync');
+const { getSoapResponse } = require("./UDP.soap.js");
 
 // get all portal account detail
 const getPortalAccountDetails = async () => {
+    const soapdetails = await getSoapResponse();
+
     const result = await db("portal_account");
     return result;
 };
@@ -15,7 +18,7 @@ const getPortalAccountDetailsByID = async (paUniqueID) => {
 };
 
 const insertPortalAccountDetails = async (paDetails) => {
-    const result = await db("portal_account").insert(paDetails,"portal_account_guid");
+    const result = await db("portal_account").insert(paDetails, "portal_account_guid");
     return result
 };
 const updatePortalAccountDetails = async (paUniqueID, paDetails) => {
