@@ -6,7 +6,11 @@
   "scripts": {
     "test": "DB_ENV=testing jest --watch --verbose",
     "server": "nodemon index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "jest": {
     "testEnvironment": "node"
@@ -23,17 +27,23 @@
   },
   "homepage": "https://github.com/raberin/express-knex-postgres-boilerplate#readme",
   "dependencies": {
+    "body-parser": "^1.20.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "knex": "^0.20.4",
+    "eslint": "^8.13.0",
+    "express": "^4.17.3",
+    "http-status": "^1.5.1",
+    "knex": "^1.0.7",
     "morgan": "^1.9.1",
-    "pg": "^7.15.2"
+    "pg": "^8.7.3"
   },
   "devDependencies": {
     "cross-env": "^6.0.3",
     "jest": "^24.9.0",
     "nodemon": "^2.0.2",
-    "supertest": "^4.0.2"
+    "supertest": "^4.0.2",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.1"
   }
 }
