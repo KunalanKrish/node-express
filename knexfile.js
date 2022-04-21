@@ -1,17 +1,18 @@
-require("dotenv").config();
 const pg = require("pg");
+const config=require("config");
+const { host, port, user, password, database } = config.get('dbConfig');
 // pg.defaults.ssl = true;
 
 module.exports = {
-  development: {
+  configuration: {
     client: "pg",
     useNullAsDefault: true,
     connection: {
-      host: process.env.POSTGRES_DEV_HOST,
-      port: process.env.POSTGRES_DEV_PORT,
-      user: process.env.POSTGRES_DEV_USER,
-      password: process.env.POSTGRES_DEV_PASSWORD,
-      database: process.env.POSTGRES_DEV_DATABASE
+      host: host,
+      port: port,
+      user: user,
+      password: password,
+      database: database
     },
     migrations: {
       directory: "./database/migrations"

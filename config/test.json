@@ -1,0 +1,11 @@
+{
+  "env": "test",
+  "dbConfig": {
+    "host": "localhost",
+    "port": "5432",
+    "user": "postgres",
+    "password": "password",
+    "database": "UDP"
+  },
+  "secretKey": "secretKey"
+}

@@ -1,6 +1,5 @@
 
 const db = require("../config/dbConfig.js");
-const catchAsync = require('../utils/catchAsync');
 const { getSoapResponse } = require("./UDP.soap.js");
 
 // get all portal account detail
